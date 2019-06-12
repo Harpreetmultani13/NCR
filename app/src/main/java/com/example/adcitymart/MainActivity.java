@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         FirebaseApp.initializeApp(this);
         Auth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);

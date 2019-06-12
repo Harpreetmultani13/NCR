@@ -78,7 +78,7 @@
             android:layout_gravity="center"
             android:layout_width="260dp"
             android:inputType="textPassword"
-            android:hint="Password"
+            android:hint="Create Password"
             android:id="@+id/password"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimary"
