@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
     FirebaseUser firebaseUser;
     FirebaseAuth Auth;
-    Boolean islogin ;
+    Boolean islogin=false ;
     SharedPreferences sharedPreferences;
 
 

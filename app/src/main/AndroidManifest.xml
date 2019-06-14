@@ -19,7 +19,7 @@
         <activity android:name=".Adverstisement" />
         <activity android:name=".Design" />
         <activity android:name=".Not_Verified" />
-        <activity android:name=".splash_screen">
+        <activity android:name=".splash_screen" android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
