@@ -20,8 +20,11 @@ import com.google.firebase.database.ValueEventListener;
 
 public class About_us extends Fragment
 {
-   // FirebaseDatabase database = FirebaseDatabase.getInstance();
-   // DatabaseReference myRef = database.getReference("https://adcitymart-9095a.firebaseio.com/");
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+   DatabaseReference mission = database.getReference("About_Us/Our_Mission");
+   DatabaseReference who=database.getReference("About_Us/Who_We_Are");
+   DatabaseReference why=database.getReference("About_Us/Why_Choose_Us");
+   DatabaseReference services=database.getReference("About_Us/Services");
 
     TextView textView;
     View view;
@@ -29,29 +32,68 @@ public class About_us extends Fragment
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
-       // init(view);
+
 
         view = inflater.inflate(R.layout.about_us, container, false);
-       /* myRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
-            {
-            ShowData(dataSnapshot);
-            }
+      mission.addValueEventListener(new ValueEventListener() {
+          @Override
+          public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+          {
+             String mission=dataSnapshot.getValue(String.class);
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError)
-            {
-                Toast.makeText(getActivity(), "No Internet", Toast.LENGTH_SHORT).show();
+          }
 
-            }
-        });*/
+          @Override
+          public void onCancelled(@NonNull DatabaseError databaseError)
+          {
+              Toast.makeText(getActivity(), "No Internet", Toast.LENGTH_SHORT).show();
+          }
+      });
+      who.addValueEventListener(new ValueEventListener() {
+          @Override
+          public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+          {
+             String who=dataSnapshot.getValue(String.class);
+          }
+
+          @Override
+          public void onCancelled(@NonNull DatabaseError databaseError)
+          {
+              Toast.makeText(getActivity(), "No Internet", Toast.LENGTH_SHORT).show();
+
+          }
+      });
+      why.addValueEventListener(new ValueEventListener() {
+          @Override
+          public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+          {
+              String why=dataSnapshot.getValue(String.class);
+
+          }
+
+          @Override
+          public void onCancelled(@NonNull DatabaseError databaseError)
+          {
+              Toast.makeText(getActivity(), "No Internet", Toast.LENGTH_SHORT).show();
+          }
+      });
+      services.addValueEventListener(new ValueEventListener() {
+          @Override
+          public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+          {
+             String service=dataSnapshot.getValue(String.class);
+              Toast.makeText(getActivity(), "OUR SERVICES  "+service, Toast.LENGTH_SHORT).show();
+          }
+
+          @Override
+          public void onCancelled(@NonNull DatabaseError databaseError)
+          {
+              Toast.makeText(getActivity(), "No Internet", Toast.LENGTH_SHORT).show();
+          }
+      });
         return view;
     }
 
-   /* private void ShowData(DataSnapshot dataSnapshot)
-    {
-        String value = dataSnapshot.getValue(String.class);
-        Toast.makeText(getActivity(), "U enter"+value, Toast.LENGTH_SHORT).show();
-    }*/
+
+
 }

@@ -15,45 +15,49 @@ import com.google.firebase.database.core.view.View;
 
 public class Intership extends AppCompatActivity
 {
-    DatabaseReference databaseReference;
-    FirebaseDatabase firebaseDatabase;
+
     TextView textView;
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference("Internship/");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-       // init();
-       // ftechdata();
+        //init();
+        fetchdata();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intership);
 
-    }
-  /*  private void init()
-    {
-        textView=(TextView)findViewById(R.id.internshipid);
+
+
     }
 
-    private void ftechdata()
+
+    /*public  void init()
+       {
+           textView=findViewById(R.id.internshipid);
+       }*/
+    private void fetchdata()
     {
-        databaseReference= FirebaseDatabase.getInstance().getReference().child("adcitymart-9095a").child("Intership");
-        databaseReference.addValueEventListener(new ValueEventListener() {
+        myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
-                String s=(dataSnapshot.child("Intership").getValue().toString());
-                Toast.makeText(Intership.this, "U enter "+s, Toast.LENGTH_SHORT).show();
-                textView.setText(dataSnapshot.child("Intership").getValue().toString());
+                String Internship =dataSnapshot.getValue(String.class);
+                Toast.makeText(Intership.this, "Value is"+Internship, Toast.LENGTH_SHORT).show();
+                //textView.setText(value);
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError)
             {
-                Toast.makeText(Intership.this, "Make Sure that u r Connected to internship", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Intership.this, "Not possible", Toast.LENGTH_SHORT).show();
 
             }
         });
-
     }
-*/
+
 
 }
+
