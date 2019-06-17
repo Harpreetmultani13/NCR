@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:textSize="22dp"
-        android:text="Our Patners"
+        android:text="Our Cleint"
         android:textStyle="bold"/>
     <HorizontalScrollView
         android:layout_width="wrap_content"
@@ -127,9 +127,51 @@
             android:src="@mipmap/ic_launcher"/>
 
     </android.support.v7.widget.CardView>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <android.support.v7.widget.CardView
+            android:layout_height="175dp"
+            android:layout_width="290dp"
+            android:layout_margin="3dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp">
+
+            <ImageView
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:id="@+id/image8"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"/>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_height="175dp"
+            android:layout_width="290dp"
+            android:layout_margin="3dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp">
+
+            <ImageView
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:id="@+id/image9"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"/>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_height="175dp"
+            android:layout_width="290dp"
+            android:layout_margin="3dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp">
+
+            <ImageView
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:id="@+id/image10"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"/>
+
+        </android.support.v7.widget.CardView>
 
 
 </LinearLayout>
@@ -152,7 +194,7 @@
             android:layout_height="match_parent">
             <TextView
                 android:layout_width="wrap_content"
-                android:text="CAREERS"
+                android:text="Contact Us"
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content" />

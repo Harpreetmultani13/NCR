@@ -24,20 +24,18 @@ public class Intership extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        //init();
+
         fetchdata();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intership);
 
+        textView=findViewById(R.id.internshipid);
 
 
     }
 
 
-    /*public  void init()
-       {
-           textView=findViewById(R.id.internshipid);
-       }*/
+
     private void fetchdata()
     {
         myRef.addValueEventListener(new ValueEventListener() {
@@ -45,8 +43,8 @@ public class Intership extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                 String Internship =dataSnapshot.getValue(String.class);
-                Toast.makeText(Intership.this, "Value is"+Internship, Toast.LENGTH_SHORT).show();
-                //textView.setText(value);
+               // Toast.makeText(Intership.this, "Value is"+Internship, Toast.LENGTH_SHORT).show();
+                textView.setText(Internship);
             }
 
             @Override

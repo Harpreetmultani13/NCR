@@ -26,7 +26,7 @@ public class About_us extends Fragment
    DatabaseReference why=database.getReference("About_Us/Why_Choose_Us");
    DatabaseReference services=database.getReference("About_Us/Services");
 
-    TextView textView;
+    TextView textView_who,textView1_mission,textView2_services,textView_choose;
     View view;
     @Nullable
     @Override
@@ -35,11 +35,14 @@ public class About_us extends Fragment
 
 
         view = inflater.inflate(R.layout.about_us, container, false);
-      mission.addValueEventListener(new ValueEventListener() {
+        inti(view);
+      mission.addValueEventListener(new ValueEventListener()
+      {
           @Override
           public void onDataChange(@NonNull DataSnapshot dataSnapshot)
           {
              String mission=dataSnapshot.getValue(String.class);
+             textView1_mission.setText(mission);
 
           }
 
@@ -54,12 +57,14 @@ public class About_us extends Fragment
           public void onDataChange(@NonNull DataSnapshot dataSnapshot)
           {
              String who=dataSnapshot.getValue(String.class);
+             textView_who.setText(who);
           }
 
           @Override
           public void onCancelled(@NonNull DatabaseError databaseError)
           {
               Toast.makeText(getActivity(), "No Internet", Toast.LENGTH_SHORT).show();
+
 
           }
       });
@@ -68,6 +73,7 @@ public class About_us extends Fragment
           public void onDataChange(@NonNull DataSnapshot dataSnapshot)
           {
               String why=dataSnapshot.getValue(String.class);
+              textView_choose.setText(why);
 
           }
 
@@ -82,7 +88,7 @@ public class About_us extends Fragment
           public void onDataChange(@NonNull DataSnapshot dataSnapshot)
           {
              String service=dataSnapshot.getValue(String.class);
-              Toast.makeText(getActivity(), "OUR SERVICES  "+service, Toast.LENGTH_SHORT).show();
+              textView2_services.setText(service);
           }
 
           @Override
@@ -94,6 +100,13 @@ public class About_us extends Fragment
         return view;
     }
 
+    private void inti(View view)
+    {
+        textView_who=view.findViewById(R.id.idwho);
+        textView1_mission=view.findViewById(R.id.id_mission);
+        textView2_services=view.findViewById(R.id.id_services);
+        textView_choose=view.findViewById(R.id.id_choose);
+    }
 
 
 }

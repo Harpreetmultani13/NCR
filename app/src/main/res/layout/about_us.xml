@@ -47,7 +47,6 @@
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
                 android:id="@+id/idwho"
-                android:text="who_we_are"
                 android:textSize="16sp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -87,10 +86,11 @@
                 android:layout_gravity="center"
                 android:background="@color/colorPrimary">
             </View>
-            <TextView android:layout_height="wrap_content"
+            <TextView
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
-                android:text="@string/mission"
+                android:id="@+id/id_mission"
                 android:textSize="16sp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -133,7 +133,7 @@
             <TextView android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
-                android:text="@string/services"
+                android:id="@+id/id_services"
                 android:textSize="16sp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -176,7 +176,7 @@
             <TextView android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
-                android:text="@string/choose"
+                android:id="@+id/id_choose"
                 android:textSize="16sp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>

@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
-                android:text="@string/mission"
+                android:id="@+id/id_display"
                 android:textSize="16sp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
-                android:text="@string/mission"
+                android:id="@+id/social"
                 android:textSize="16sp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -160,7 +160,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
-                android:text="@string/mission"
+                android:id="@+id/news"
                 android:textSize="16sp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -211,7 +211,58 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
-                android:text="@string/mission"
+                android:id="@+id/outdoor"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        app:cardElevation="8dp">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/about_us"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="center"
+                    android:text="Product Placement"
+                    android:textSize="29dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+            <View android:layout_height="1dp"
+                android:layout_width="320dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary">
+            </View>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:id="@+id/id_PP"
                 android:textSize="16sp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -262,7 +313,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
-                android:text="@string/mission"
+                android:id="@+id/radio"
                 android:textSize="16sp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -313,58 +364,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
-                android:text="@string/mission"
-                android:textSize="16sp"/>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:layout_margin="5dp"
-        app:cardElevation="8dp">
-        <LinearLayout
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginTop="2dp"
-                android:padding="5dp">
-
-                <ImageView
-                    android:layout_height="40dp"
-                    android:layout_width="40dp"
-                    android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
-                    android:layout_marginLeft="12dp"
-                    android:layout_gravity="center"/>
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_gravity="center"
-                    android:text="E-Mail Ads"
-                    android:textSize="29dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorPrimary"/>
-
-            </LinearLayout>
-            <View android:layout_height="1dp"
-                android:layout_width="320dp"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center"
-                android:background="@color/colorPrimary">
-            </View>
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:layout_margin="20dp"
-                android:text="@string/mission"
+                android:id="@+id/id_email"
                 android:textSize="16sp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -415,7 +415,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
-                android:text="@string/mission"
+                android:id="@+id/id_video"
                 android:textSize="16sp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -466,7 +466,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
-                android:text="@string/mission"
+                android:id="@+id/id_google"
                 android:textSize="16sp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
