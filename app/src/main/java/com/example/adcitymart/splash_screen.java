@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import static java.lang.Thread.currentThread;
 import static java.lang.Thread.sleep;
@@ -14,10 +15,12 @@ import static java.lang.Thread.sleep;
 public class splash_screen extends AppCompatActivity
 {
     ImageView imageView;
+    TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         imageView=findViewById(R.id.splash);
+        textView=findViewById(R.id.splashtext);
         super.onCreate(savedInstanceState);
         //requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);

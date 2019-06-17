@@ -7,30 +7,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Follow_Us">
+
+
     <ImageButton
         android:layout_width="wrap_content"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/insta"
         android:id="@+id/instagram"
         android:layout_height="wrap_content" />
 
     <ImageButton
         android:layout_width="wrap_content"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/facebook"
         android:id="@+id/facebook"
         android:layout_height="wrap_content" />
     <ImageButton
         android:layout_width="wrap_content"
         android:id="@+id/twitter"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/twitter"
         android:layout_height="wrap_content" />
     <ImageButton
         android:layout_width="wrap_content"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/linked"
         android:id="@+id/linkedid"
         android:layout_height="wrap_content" />
     <ImageButton
         android:layout_width="wrap_content"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/skype"
         android:id="@+id/Skype"
         android:layout_height="wrap_content" />
     <android.support.v7.widget.CardView
