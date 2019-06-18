@@ -39,7 +39,7 @@ public class Adverstisement extends AppCompatActivity
         textView_radio=findViewById(R.id.radio);
         textView_email=findViewById(R.id.id_email);
         textView_video=findViewById(R.id.id_video);
-        textView_google=findViewById(R.id.id_google);
+      //  textView_google=findViewById(R.id.id_google);
         textView_pp=findViewById(R.id.id_PP);
         Fetch_Advertisement_Display_Ads();
         Fetch_Advertisement_Email();
