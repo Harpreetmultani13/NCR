@@ -3,6 +3,7 @@ package com.example.adcitymart;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -13,15 +14,22 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Marketing extends AppCompatActivity
 {
+    TextView textView_sco,textView_smo,textView_digital,textView_emails;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference digital=database.getReference("Marketing/Digital");
     DatabaseReference Email=database.getReference("Marketing/E-Mail");
     DatabaseReference smo=database.getReference("Marketing/SMO");
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_marketing);
+        textView_digital=findViewById(R.id.id_diddital);
+        textView_emails=findViewById(R.id.id_mail_market);
+        textView_smo=findViewById(R.id.id_smoo);
+        textView_sco=findViewById(R.id.id_seo);
         Fetch_digital();
         Fetch_email();
         Fetch_smo();
@@ -34,7 +42,7 @@ public class Marketing extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                 String smo=dataSnapshot.getValue(String.class);
-                Toast.makeText(Marketing.this, "U Enter "+ smo, Toast.LENGTH_SHORT).show();
+               textView_smo.setText(smo);
             }
 
             @Override
@@ -53,6 +61,7 @@ public class Marketing extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                String mail=dataSnapshot.getValue(String.class) ;
+               textView_emails.setText(mail);
             }
 
             @Override
@@ -72,6 +81,7 @@ public class Marketing extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                 String val=dataSnapshot.getValue(String.class);
+                textView_digital.setText(val);
 
             }
 

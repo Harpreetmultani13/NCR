@@ -3,6 +3,7 @@ package com.example.adcitymart;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -13,7 +14,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Adverstisement extends AppCompatActivity
 {
-
+    TextView textView_display,textView_social,textView_newspaper,textView_outdoor,textView_radio,textView_email,textView_video,textView_google,textView_pp;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference Advertisement_Display_Ads = database.getReference("Advertisement/Display_Ads");
@@ -31,6 +32,15 @@ public class Adverstisement extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adverstisement);
+        textView_display=findViewById(R.id.id_display);
+        textView_social=findViewById(R.id.social);
+        textView_newspaper=findViewById(R.id.news);
+        textView_outdoor=findViewById(R.id.outdoor);
+        textView_radio=findViewById(R.id.radio);
+        textView_email=findViewById(R.id.id_email);
+        textView_video=findViewById(R.id.id_video);
+        textView_google=findViewById(R.id.id_google);
+        textView_pp=findViewById(R.id.id_PP);
         Fetch_Advertisement_Display_Ads();
         Fetch_Advertisement_Email();
         Fetch_Advertisement_Newspaper_Ads();
@@ -51,6 +61,7 @@ public class Adverstisement extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                 String Radio=dataSnapshot.getValue(String.class);
+                textView_radio.setText(Radio);
 
             }
 
@@ -69,6 +80,7 @@ public class Adverstisement extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                 String video=dataSnapshot.getValue(String.class);
+                textView_video.setText(video);
             }
 
             @Override
@@ -86,6 +98,7 @@ public class Adverstisement extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                 String social=dataSnapshot.getValue(String.class);
+                textView_social.setText(social);
             }
 
             @Override
@@ -103,6 +116,7 @@ public class Adverstisement extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                 String pp = dataSnapshot.getValue(String.class);
+                textView_pp.setText(pp);
             }
 
             @Override
@@ -120,6 +134,7 @@ public class Adverstisement extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                 String outdoor=dataSnapshot.getValue(String.class);
+                textView_outdoor.setText(outdoor);
 
             }
 
@@ -139,6 +154,7 @@ public class Adverstisement extends AppCompatActivity
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot)
                 {
                     String newspaper=dataSnapshot.getValue(String.class);
+                    textView_newspaper.setText(newspaper);
 
                 }
 
@@ -159,6 +175,7 @@ public class Adverstisement extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                String Advertisement_Email=dataSnapshot.getValue(String.class);
+               textView_email.setText(Advertisement_Email);
 
             }
 
@@ -180,7 +197,7 @@ public class Adverstisement extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                 String Advertisement_Display_Ads=dataSnapshot.getValue(String.class);
-                Toast.makeText(Adverstisement.this, "Advertisement Display_Ads  " + Advertisement_Display_Ads, Toast.LENGTH_SHORT).show();
+                textView_display.setText(Advertisement_Display_Ads);
             }
 
             @Override

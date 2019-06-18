@@ -3,6 +3,7 @@ package com.example.adcitymart;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -13,6 +14,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Design extends AppCompatActivity
 {
+    TextView textView_3d,textView_logo,textView_graphics;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference Design_Logo=database.getReference("Design/Logo_Designing");
     DatabaseReference Design_DDD=database.getReference("Design/3D Modelling and Designing");
@@ -23,6 +25,9 @@ public class Design extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_design);
+        textView_3d=findViewById(R.id.id_DDD);
+        textView_graphics=findViewById(R.id.id_graphics);
+        textView_logo=findViewById(R.id.id_logo);
         Fetch_Design_DDD();
         Fetch_Design_Logo();
         Fetch_Design_Graphics();
@@ -36,6 +41,7 @@ public class Design extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                 String val=dataSnapshot.getValue(String.class);
+                textView_graphics.setText(val);
             }
 
             @Override
@@ -53,7 +59,7 @@ public class Design extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                 String logo=dataSnapshot.getValue(String.class);
-                Toast.makeText(Design.this, "Value  "+logo, Toast.LENGTH_SHORT).show();
+                textView_logo.setText(logo);
 
             }
 
@@ -72,6 +78,7 @@ public class Design extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                 String ddd=dataSnapshot.getValue(String.class);
+                textView_3d.setText(ddd);
             }
 
             @Override

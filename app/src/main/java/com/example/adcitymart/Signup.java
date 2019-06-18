@@ -42,7 +42,7 @@ public class Signup extends AppCompatActivity {
         Auth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+       // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         initialize();
     }
 
@@ -52,7 +52,7 @@ public class Signup extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public boolean onOptionsItemSelected(MenuItem item) {
+   /* public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId() == android.R.id.home)
         {
             onBackPressed();
@@ -62,7 +62,7 @@ public class Signup extends AppCompatActivity {
         {
             return super.onOptionsItemSelected(item);
         }
-    }
+    }*/
 
     //Method to signup user
     public void mysignup(View view)

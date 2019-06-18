@@ -3,6 +3,7 @@ package com.example.adcitymart;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -13,6 +14,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Development extends AppCompatActivity
 {
+    TextView textView_web,textView_andoid,textView_cms,textView_erp,textView_ecomm,textView_java;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference andoid=database.getReference("Develop/Android");
     DatabaseReference E_Commerce=database.getReference("Develop/E-Commerce");
@@ -31,6 +33,12 @@ public class Development extends AppCompatActivity
         Fetch_CMS();
         Fetch_ERP();
         Fetch_JAVA();
+        textView_andoid=findViewById(R.id.id_andoid);
+        textView_web=findViewById(R.id.id_web);
+        textView_cms=findViewById(R.id.id_cms);
+        textView_erp=findViewById(R.id.id_erp);
+        textView_ecomm=findViewById(R.id.id_ecommerce);
+        textView_java=findViewById(R.id.id_java);
 
 
     }
@@ -42,6 +50,7 @@ public class Development extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                String java=dataSnapshot.getValue(String.class);
+               textView_java.setText(java);
             }
 
             @Override
@@ -59,6 +68,7 @@ public class Development extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
               String erp=dataSnapshot.getValue(String.class);
+              textView_erp.setText(erp);
             }
 
             @Override
@@ -76,6 +86,7 @@ public class Development extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                String cms=dataSnapshot.getValue(String.class);
+               textView_cms.setText(cms);
             }
 
             @Override
@@ -94,6 +105,7 @@ public class Development extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
               String ecom=dataSnapshot.getValue(String.class);
+              textView_ecomm.setText(ecom);
             }
 
             @Override
@@ -111,7 +123,7 @@ public class Development extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
                String  android=dataSnapshot.getValue(String.class);
-                Toast.makeText(Development.this, "ANDROID == "+android, Toast.LENGTH_SHORT).show();
+                textView_andoid.setText(android);
 
             }
 
