@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageButton;
 
 public class Follow_Us extends AppCompatActivity
@@ -16,6 +17,7 @@ public class Follow_Us extends AppCompatActivity
     {
 
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_follow__us);
         findViewById(R.id.cardbutton).setOnClickListener(new View.OnClickListener() {
             @Override

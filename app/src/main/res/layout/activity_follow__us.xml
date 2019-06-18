@@ -5,50 +5,131 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FFFFFF"
     android:layout_height="match_parent"
     tools:context=".Follow_Us">
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/backbutton"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:padding="10dp"
+        android:src="@drawable/vectorfollow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:text="We are available"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:text="On every device"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="34dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:id="@+id/cardbutton"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        app:cardElevation="3dp">
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:text="Go to website"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:text="OR"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Follow us On"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+
+    android:orientation="horizontal">
 
     <ImageButton
         android:layout_width="wrap_content"
-        android:src="@drawable/insta"
         android:id="@+id/instagram"
+        android:background="#FFFFFF"
+android:src="@drawable/insta"
+        android:layout_margin="5dp"
         android:layout_height="wrap_content" />
 
     <ImageButton
         android:layout_width="wrap_content"
-        android:src="@drawable/facebook"
         android:id="@+id/facebook"
+        android:background="#FFFFFF"
+android:src="@drawable/facebook"
+        android:layout_margin="5dp"
+
         android:layout_height="wrap_content" />
     <ImageButton
         android:layout_width="wrap_content"
         android:id="@+id/twitter"
-        android:src="@drawable/twitter"
-        android:layout_height="wrap_content" />
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:src="@drawable/linked"
-        android:id="@+id/linkedid"
-        android:layout_height="wrap_content" />
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:src="@drawable/skype"
-        android:id="@+id/Skype"
-        android:layout_height="wrap_content" />
-    <android.support.v7.widget.CardView
-        android:layout_marginTop="34dp"
-        android:layout_height="50dp"
-        android:id="@+id/cardbutton"
-        android:layout_width="match_parent"
         android:layout_margin="5dp"
-        app:cardElevation="8dp">
-        <TextView
-            android:layout_gravity="center"
-            android:textSize="35dp"
-            android:layout_width="wrap_content"
-            android:text="Our Websitr"
-            android:layout_height="wrap_content" />
-    </android.support.v7.widget.CardView>
+
+        android:src="@drawable/twitter"
+        android:background="#FFFFFF"
+
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:id="@+id/linkedid"
+        android:src="@drawable/linked"
+        android:layout_margin="5dp"
+
+        android:background="#FFFFFF"
+
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:id="@+id/Skype"
+        android:src="@drawable/skype"
+        android:background="#FFFFFF"
+        android:layout_margin="5dp"
+
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+
 
 
 
