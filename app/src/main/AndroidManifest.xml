@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Blog"></activity>
-        <activity android:name=".Follow_Us" />
+        <activity android:name=".Follow_Us" android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".Intership" />
         <activity android:name=".Careers" />
         <activity android:name=".Marketing" />
