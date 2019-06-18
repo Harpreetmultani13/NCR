@@ -164,6 +164,7 @@ StorageReference reference;
             myfile4=File.createTempFile("images",".jpg");
         } catch (IOException e)
         {
+
             e.printStackTrace();
         }
       final File finalfile4=myfile4;
@@ -360,3 +361,4 @@ StorageReference reference;
     }
 
 }
+//done
