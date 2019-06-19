@@ -46,11 +46,19 @@ public class Home extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         bottomNavigationView = findViewById(R.id.bottomnavigation);
+        fragment=null;
+        fragment=new Home_Frag();
+        if(fragment!=null)
+        {
+            FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.frame_layout,fragment);
+            fragmentTransaction.commit();
+        }
         bottomNavigationView.setOnNavigationItemSelectedListener(new OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item)
             {
-                fragment=null;
+
                 int id=item.getItemId();
                 if(id==R.id.idhome)
                 {
@@ -173,7 +181,7 @@ public class Home extends AppCompatActivity
                 Intent intent=new Intent(Home.this,MainActivity.class);
                 startActivity(intent);
                     preferences = PreferenceManager.getDefaultSharedPreferences(Home.this);
-                    preferences.edit().putBoolean("IsLogin",false).commit();
+                    preferences.edit().putBoolean("Islogin",false).commit();
                         finish();
                 }
             }).setNegativeButton("No", new DialogInterface.OnClickListener() {
