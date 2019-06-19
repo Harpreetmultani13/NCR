@@ -38,7 +38,7 @@
                 android:background="@color/colorPrimary">
             </View>
             <TextView
-
+                android:text="Required Internet for Data"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
@@ -80,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
                 android:id="@+id/id_mission"
-
+                android:text="Required Internet for Data"
                 android:typeface="serif"
                 android:textSize="18dp"/>
         </LinearLayout>
@@ -117,6 +117,7 @@
             <TextView
 
                 android:typeface="serif"
+                android:text="Required Internet for Data"
                 android:textSize="18dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
@@ -155,6 +156,7 @@
                 android:background="@color/colorPrimary">
             </View>
             <TextView
+                android:text="Required Internet for Data"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"

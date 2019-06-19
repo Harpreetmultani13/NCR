@@ -18,7 +18,7 @@
         <activity android:name=".Development" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".Adverstisement" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".Design" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".Not_Verified" />
+        <activity android:name=".Not_Verified" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".splash_screen" android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
         </activity>
         <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".Home" />
-        <activity android:name=".Signup" />
+        <activity android:name=".Signup" android:theme="@style/Theme.AppCompat.NoActionBar"/>
     </application>
 
 </manifest>

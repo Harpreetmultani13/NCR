@@ -60,6 +60,7 @@
                 android:background="@color/colorPrimary">
             </View>
             <TextView
+                android:text="Required Internet for Data"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"

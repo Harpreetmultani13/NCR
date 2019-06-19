@@ -58,6 +58,7 @@
                 android:background="@color/colorPrimary">
             </View>
             <TextView
+                android:text="Required Internet for Data"
                 android:typeface="serif"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
@@ -112,6 +113,7 @@
                 android:background="@color/colorPrimary">
             </View>
             <TextView
+                android:text="Required Internet for Data"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
@@ -185,6 +187,7 @@
                 android:textColor="@color/colorPrimary"
                 android:layout_height="wrap_content" />
             <TextView
+                android:text="Required Internet for Data"
                 android:layout_marginTop="20dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
@@ -216,6 +219,7 @@
                         android:textColor="@color/colorPrimary"
                         android:layout_height="wrap_content" />
                     <TextView
+                        android:text="Required Internet for Data"
                         android:layout_marginTop="20dp"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
@@ -281,6 +285,7 @@
                 android:background="@color/colorPrimary">
             </View>
             <TextView
+                android:text="Required Internet for Data"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
@@ -308,6 +313,7 @@
                     android:textColor="@color/colorPrimary"
                     android:layout_height="wrap_content" />
                 <TextView
+                    android:text="Required Internet for Data"
                     android:layout_marginTop="20dp"
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
@@ -339,6 +345,7 @@
                         android:textColor="@color/colorPrimary"
                         android:layout_height="wrap_content" />
                     <TextView
+                        android:text="Required Internet for Data"
                         android:layout_marginTop="20dp"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
@@ -372,6 +379,7 @@
                         android:textColor="@color/colorPrimary"
                         android:layout_height="wrap_content" />
                     <TextView
+                        android:text="Required Internet for Data"
                         android:layout_marginTop="20dp"
                         android:layout_height="match_parent"
                         android:layout_width="match_parent"
@@ -434,6 +442,7 @@
                 android:background="@color/colorPrimary">
             </View>
             <TextView
+                android:text="Required Internet for Data"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"

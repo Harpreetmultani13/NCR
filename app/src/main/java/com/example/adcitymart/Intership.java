@@ -81,7 +81,7 @@ public class Intership extends AppCompatActivity
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(Intership.this, "Fetching....", Toast.LENGTH_SHORT).show();
+
             }
         });
 
@@ -107,7 +107,7 @@ public class Intership extends AppCompatActivity
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(Intership.this, "Fetching....", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Intership.this, "Fetching Data ....", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -130,7 +130,7 @@ public class Intership extends AppCompatActivity
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(Intership.this, "Fetching....", Toast.LENGTH_SHORT).show();
+
             }
         });
 

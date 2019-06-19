@@ -106,7 +106,7 @@ StorageReference reference;
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(getActivity(), "Fetching", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Fetching Data", Toast.LENGTH_SHORT).show();
                 imageView1.setImageResource(R.drawable.sbi);
 
             }
@@ -134,7 +134,7 @@ StorageReference reference;
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(getActivity(), "Feching....", Toast.LENGTH_SHORT).show();
+
             }
         });
         StorageReference third=reference.child("axisbank.png");
@@ -156,7 +156,7 @@ StorageReference reference;
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(getActivity(), "Feching....", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Feching Data....", Toast.LENGTH_SHORT).show();
             }
         });
         StorageReference fourth=reference.child("bob.png");
@@ -203,7 +203,7 @@ StorageReference reference;
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(getActivity(), "Feching....", Toast.LENGTH_SHORT).show();
+
             }
         });
         StorageReference sixth=reference.child("crossword.png");
@@ -225,7 +225,7 @@ StorageReference reference;
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(getActivity(), "Feching....", Toast.LENGTH_SHORT).show();
+
             }
         });
         StorageReference seven=reference.child("ing.png");

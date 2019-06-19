@@ -33,8 +33,8 @@ public class About_us extends Fragment
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
-        //getActivity().getActionBar().hide();
-       // ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
+       // getActivity().getActionBar().hide();
+       //((AppCompatActivity) getActivity()).getSupportActionBar().hide();
         view = inflater.inflate(R.layout.about_us, container, false);
         inti(view);
 
