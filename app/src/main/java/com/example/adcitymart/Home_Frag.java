@@ -106,7 +106,8 @@ StorageReference reference;
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(getActivity(), "NO Internet", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Fetching", Toast.LENGTH_SHORT).show();
+                imageView1.setImageResource(R.drawable.sbi);
 
             }
         });
@@ -133,7 +134,7 @@ StorageReference reference;
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(getActivity(), "NO Intenet", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Feching....", Toast.LENGTH_SHORT).show();
             }
         });
         StorageReference third=reference.child("axisbank.png");
@@ -155,7 +156,7 @@ StorageReference reference;
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(getActivity(), "NO Intenet", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Feching....", Toast.LENGTH_SHORT).show();
             }
         });
         StorageReference fourth=reference.child("bob.png");
@@ -179,10 +180,10 @@ StorageReference reference;
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(getActivity(), "NO Intenet", Toast.LENGTH_SHORT).show();
+
             }
         });
-        StorageReference fifth=reference.child("car24.png");
+        StorageReference fifth=reference.child("cars24.png");
         File myfile5=null;
         try {
             myfile5=File.createTempFile("images",".jpg");
@@ -202,7 +203,7 @@ StorageReference reference;
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(getActivity(), "NO Intenet", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Feching....", Toast.LENGTH_SHORT).show();
             }
         });
         StorageReference sixth=reference.child("crossword.png");
@@ -224,7 +225,7 @@ StorageReference reference;
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(getActivity(), "NO Intenet", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Feching....", Toast.LENGTH_SHORT).show();
             }
         });
         StorageReference seven=reference.child("ing.png");
@@ -246,7 +247,7 @@ StorageReference reference;
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(getActivity(), "NO Intenet", Toast.LENGTH_SHORT).show();
+
             }
         });
         StorageReference eight=reference.child("idbi.png");
@@ -268,7 +269,7 @@ StorageReference reference;
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(getActivity(), "NO Intenet", Toast.LENGTH_SHORT).show();
+
             }
         });
         StorageReference nine=reference.child("axisbank.png");
@@ -290,7 +291,7 @@ StorageReference reference;
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(getActivity(), "NO Intenet", Toast.LENGTH_SHORT).show();
+
             }
         });
         StorageReference ten=reference.child("icici.png");
@@ -314,7 +315,7 @@ StorageReference reference;
             @Override
             public void onFailure(@NonNull Exception e)
             {
-                Toast.makeText(getActivity(), "NO Intenet", Toast.LENGTH_SHORT).show();
+
             }
         });
 

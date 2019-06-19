@@ -3,6 +3,7 @@ package com.example.adcitymart;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,7 +17,7 @@ public class Blog extends AppCompatActivity
 {
     FirebaseDatabase database=FirebaseDatabase.getInstance();
     DatabaseReference ecomm=database.getReference("Blog/E-commerce and Digital marketing");
-    DatabaseReference eadver=database.getReference("E-mail advertising");
+    DatabaseReference eadver=database.getReference("Blog/E-mail advertising");
     DatabaseReference mobile=database.getReference("Blog/Mobile vs desktop ");
     DatabaseReference scale=database.getReference("Blog/Scale_up");
     DatabaseReference startup=database.getReference("Blog/Start_Up");
@@ -30,6 +31,7 @@ TextView textView_scaleup,textView_ecom,textView_mail,textView_mobile,textView_s
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+      //  getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_blog);
         textView_scaleup=findViewById(R.id.id_scaleUp);
         textView_ecom=findViewById(R.id.id_vs);

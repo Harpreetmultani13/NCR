@@ -108,4 +108,10 @@ public class Follow_Us extends AppCompatActivity
         intent.setData(Uri.parse("https://www.Skype.com/adcitymart/"));
         startActivity(intent);
     }
+
+    public void goback(View view)
+    {
+        Intent inte=new Intent(this,Home_Frag.class);
+        startActivity(inte);
+    }
 }

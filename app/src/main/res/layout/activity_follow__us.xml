@@ -15,14 +15,14 @@
         android:background="#FFFFFF"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="50dp"
+
         android:src="@drawable/backbutton"/>
 
     <ImageView
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_gravity="center"
-        android:layout_margin="50dp"
+        android:layout_marginTop="22dp"
         android:padding="10dp"
         android:src="@drawable/vectorfollow"/>
 

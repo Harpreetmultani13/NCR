@@ -5,19 +5,19 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/favicon"
+        android:icon="@drawable/citylogo"
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_launcher_background"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Blog"></activity>
+        <activity android:name=".Blog" android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity android:name=".Follow_Us" android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".Intership" />
-        <activity android:name=".Careers" />
-        <activity android:name=".Marketing" />
-        <activity android:name=".Development" />
-        <activity android:name=".Adverstisement" />
-        <activity android:name=".Design" />
+        <activity android:name=".Intership" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Careers" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Marketing" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".Development" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Adverstisement" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Design" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".Not_Verified" />
         <activity android:name=".splash_screen" android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>

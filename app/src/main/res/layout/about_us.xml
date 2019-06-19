@@ -13,41 +13,39 @@
     android:layout_margin="5dp"
     app:cardElevation="8dp">
         <LinearLayout
+            android:layout_marginTop="22dp"
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginTop="2dp"
-                android:padding="5dp"
-                android:layout_height="wrap_content">
-                <ImageView android:layout_height="40dp"
-                    android:layout_width="40dp"
-                    android:layout_gravity="center"
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:typeface="serif"
+                    android:textSize="27dp"
                     android:layout_marginLeft="12dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/person"/>
-                <TextView android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginStart="12dp" android:text="Who We Are ?"
-                    android:textStyle="bold" android:textColor="@color/colorPrimary"
+                    android:text="Who We Are ?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
                     android:layout_gravity="center"
-                    android:textSize="19sp"/>
-            </LinearLayout>
+                    />
             <View android:layout_height="1dp"
                 android:layout_width="320dp"
                 android:layout_marginTop="5dp"
                 android:layout_gravity="center"
                 android:background="@color/colorPrimary">
             </View>
-            <TextView android:layout_height="wrap_content"
+            <TextView
+
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
                 android:id="@+id/idwho"
-                android:textSize="16sp"/>
+
+                android:typeface="serif"
+                android:textSize="18dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -59,27 +57,18 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginTop="2dp"
-                android:padding="5dp"
-                android:layout_height="wrap_content">
-                <ImageView android:layout_height="40dp"
-                    android:layout_width="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginStart="12dp"
-                    android:src="@drawable/person"/>
+
                 <TextView android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
+                    android:typeface="serif"
+                    android:textSize="27dp"
                     android:layout_marginLeft="12dp"
-                    android:layout_marginStart="12dp" android:text="Mission"
-                    android:textStyle="bold" android:textColor="@color/colorPrimary"
-                    android:layout_gravity="center"
-                    android:textSize="19sp"/>
-            </LinearLayout>
+                    android:layout_marginStart="12dp"
+                    android:text="Mission"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center" />
             <View android:layout_height="1dp"
                 android:layout_width="320dp"
                 android:layout_marginTop="5dp"
@@ -91,7 +80,9 @@
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
                 android:id="@+id/id_mission"
-                android:textSize="16sp"/>
+
+                android:typeface="serif"
+                android:textSize="18dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -103,38 +94,35 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginTop="2dp"
-                android:padding="5dp"
-                android:layout_height="wrap_content">
-                <ImageView android:layout_height="40dp"
-                    android:layout_width="40dp"
-                    android:layout_gravity="center"
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:typeface="serif"
+                    android:textSize="27dp"
                     android:layout_marginLeft="12dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/person"/>
-                <TextView android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginStart="12dp" android:text="Our Sevices"
-                    android:textStyle="bold" android:textColor="@color/colorPrimary"
-                    android:layout_gravity="center"
-                    android:textSize="19sp"/>
-            </LinearLayout>
+                    android:text="Our Sevices"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center" />
+
             <View android:layout_height="1dp"
                 android:layout_width="320dp"
                 android:layout_marginTop="5dp"
                 android:layout_gravity="center"
                 android:background="@color/colorPrimary">
             </View>
-            <TextView android:layout_height="wrap_content"
+            <TextView
+
+                android:typeface="serif"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
                 android:id="@+id/id_services"
-                android:textSize="16sp"/>
+               />
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -146,38 +134,33 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginTop="2dp"
-                android:padding="5dp"
-                android:layout_height="wrap_content">
-                <ImageView android:layout_height="40dp"
-                    android:layout_width="40dp"
-                    android:layout_gravity="center"
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:typeface="serif"
+                    android:textSize="27dp"
                     android:layout_marginLeft="12dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/person"/>
-                <TextView android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginStart="12dp" android:text="Why Choose Us ?"
-                    android:textStyle="bold" android:textColor="@color/colorPrimary"
-                    android:layout_gravity="center"
-                    android:textSize="19sp"/>
-            </LinearLayout>
+                    android:text="Why Choose Us ?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center" />
+
             <View android:layout_height="1dp"
                 android:layout_width="320dp"
                 android:layout_marginTop="5dp"
                 android:layout_gravity="center"
                 android:background="@color/colorPrimary">
             </View>
-            <TextView android:layout_height="wrap_content"
+            <TextView
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
                 android:id="@+id/id_choose"
-                android:textSize="16sp"/>
+                android:typeface="serif"
+                android:textSize="18dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
 

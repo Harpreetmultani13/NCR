@@ -39,12 +39,13 @@
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
+                    android:typeface="serif"
+                    android:textSize="27dp"
                     android:layout_marginStart="12dp"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"
                     android:text="SEO"
-                    android:textSize="29dp"
                     android:textStyle="bold"
                     android:textColor="@color/colorPrimary"/>
 
@@ -62,7 +63,7 @@
                 android:layout_margin="5dp"
                 app:cardElevation="8dp">
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
 
@@ -70,17 +71,19 @@
                     android:layout_marginLeft="130dp"
                     android:layout_width="wrap_content"
                     android:text="Month 1"
+                    android:typeface="serif"
                     android:textStyle="bold"
                     android:textSize="22dp"
                     android:textColor="@color/colorPrimary"
                     android:layout_height="wrap_content" />
             <TextView
+                android:typeface="serif"
                 android:layout_marginTop="20dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
                 android:id="@+id/id_Month1"
-                android:textSize="16sp"/>
+                android:textSize="14dp"/>
 
                 </LinearLayout>
 
@@ -94,7 +97,7 @@
                 android:layout_margin="5dp"
                 app:cardElevation="8dp">
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
 
@@ -102,17 +105,18 @@
                     android:layout_marginLeft="130dp"
                     android:layout_width="wrap_content"
                     android:text="Month 2"
+                    android:typeface="serif"
                     android:textStyle="bold"
                     android:textSize="22dp"
                     android:textColor="@color/colorPrimary"
                     android:layout_height="wrap_content" />
                 <TextView
-                    android:text="vbnk"
+                    android:typeface="serif"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_margin="20dp"
                     android:id="@+id/id_Month2"
-                    android:textSize="16sp"/>
+                    android:textSize="14dp"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -124,7 +128,7 @@
                 android:layout_margin="5dp"
                 app:cardElevation="8dp">
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
 
@@ -132,17 +136,19 @@
                         android:layout_marginLeft="130dp"
                         android:layout_width="wrap_content"
                         android:text="Month 3"
+                        android:typeface="serif"
                         android:textStyle="bold"
                         android:textSize="22dp"
                         android:textColor="@color/colorPrimary"
                         android:layout_height="wrap_content" />
                     <TextView
+                        android:typeface="serif"
                         android:layout_marginTop="20dp"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:layout_margin="20dp"
                         android:id="@+id/id_Month3"
-                        android:textSize="16sp"/>
+                        android:textSize="14dp"/>
 
                 </LinearLayout>
 
@@ -155,7 +161,7 @@
                 android:layout_margin="5dp"
                 app:cardElevation="8dp">
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
 
@@ -163,17 +169,19 @@
                         android:layout_marginLeft="130dp"
                         android:layout_width="wrap_content"
                         android:text="Month 4"
+                        android:typeface="serif"
                         android:textStyle="bold"
                         android:textSize="22dp"
                         android:textColor="@color/colorPrimary"
                         android:layout_height="wrap_content" />
                     <TextView
+                        android:typeface="serif"
                         android:layout_marginTop="20dp"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:layout_margin="20dp"
                         android:id="@+id/id_Month4"
-                        android:textSize="16sp"/>
+                        android:textSize="14dp"/>
 
                 </LinearLayout>
 
@@ -186,7 +194,7 @@
                 android:layout_margin="5dp"
                 app:cardElevation="8dp">
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
 
@@ -195,16 +203,18 @@
                         android:layout_width="wrap_content"
                         android:text="Month 5"
                         android:textStyle="bold"
+                        android:typeface="serif"
                         android:textSize="22dp"
                         android:textColor="@color/colorPrimary"
                         android:layout_height="wrap_content" />
                     <TextView
+                        android:typeface="serif"
                         android:layout_marginTop="20dp"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:layout_margin="20dp"
                         android:id="@+id/id_Month5"
-                        android:textSize="16sp"/>
+                        android:textSize="14dp"/>
 
                 </LinearLayout>
 
@@ -219,7 +229,7 @@
                 android:layout_margin="5dp"
                 app:cardElevation="8dp">
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
 
@@ -228,16 +238,18 @@
                         android:layout_width="wrap_content"
                         android:text="Month 6"
                         android:textStyle="bold"
+                        android:typeface="serif"
                         android:textSize="22dp"
                         android:textColor="@color/colorPrimary"
                         android:layout_height="wrap_content" />
                     <TextView
+                        android:typeface="serif"
                         android:layout_marginTop="20dp"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:layout_margin="20dp"
                         android:id="@+id/id_Month6"
-                        android:textSize="16sp"/>
+                        android:textSize="14dp"/>
 
                 </LinearLayout>
 
@@ -275,12 +287,13 @@
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_marginStart="12dp"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"
                     android:text="SMO"
-                    android:textSize="29dp"
+                    android:layout_marginTop="0dp"
+                    android:typeface="serif"
+                    android:textSize="27dp"
                     android:textStyle="bold"
                     android:textColor="@color/colorPrimary"/>
 
@@ -292,11 +305,12 @@
                 android:background="@color/colorPrimary">
             </View>
             <TextView
+                android:typeface="serif"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
                 android:id="@+id/id_smoo"
-                android:textSize="16sp"/>
+                android:textSize="16dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -326,12 +340,13 @@
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_marginStart="12dp"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"
                     android:text="Digital Marketing"
-                    android:textSize="29dp"
+                    android:layout_marginTop="0dp"
+                    android:typeface="serif"
+                    android:textSize="27dp"
                     android:textStyle="bold"
                     android:textColor="@color/colorPrimary"/>
 
@@ -343,11 +358,12 @@
                 android:background="@color/colorPrimary">
             </View>
             <TextView
+                android:typeface="serif"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
                 android:id="@+id/id_diddital"
-                android:textSize="16sp"/>
+                android:textSize="16dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -377,12 +393,13 @@
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
+                    android:typeface="serif"
+                    android:textSize="27dp"
                     android:layout_marginStart="12dp"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"
                     android:text="E-Mail Marketing"
-                    android:textSize="29dp"
                     android:textStyle="bold"
                     android:textColor="@color/colorPrimary"/>
 
@@ -394,11 +411,12 @@
                 android:background="@color/colorPrimary">
             </View>
             <TextView
+                android:typeface="serif"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
                 android:id="@+id/id_mail_market"
-                android:textSize="16sp"/>
+                android:textSize="16dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
 

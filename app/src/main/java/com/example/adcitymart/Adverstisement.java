@@ -1,19 +1,34 @@
 package com.example.adcitymart;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
+import java.io.File;
+import java.io.IOException;
 
 public class Adverstisement extends AppCompatActivity
 {
+    FirebaseStorage storage;
+    StorageReference reference;
+    ImageView imageView1,imageView2;
     TextView textView_display,textView_social,textView_newspaper,textView_outdoor,textView_radio,textView_email,textView_video,textView_google,textView_pp;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -31,7 +46,10 @@ public class Adverstisement extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+       // getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_adverstisement);
+        imageView1=findViewById(R.id.one);
+        imageView2=findViewById(R.id.two);
         textView_display=findViewById(R.id.id_display);
         textView_social=findViewById(R.id.social);
         textView_newspaper=findViewById(R.id.news);
@@ -49,8 +67,66 @@ public class Adverstisement extends AppCompatActivity
         Fetch_Advertisement_Social_Media_Ads();
         Fetch_Advertisement_Video_Ads();
         Fetch_Advertisement_Radio();
+            FetchImage();
 
 
+    }
+
+    private void FetchImage()
+    {
+        storage= FirebaseStorage.getInstance();
+        reference=storage.getReferenceFromUrl("gs://adcitymart-9095a.appspot.com");
+        StorageReference fisrt=reference.child("vehiclead1.jpg");
+        File myfile=null;
+        try
+        {
+            myfile=File.createTempFile("images",".jpg");
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        final File finalmyfile1=myfile;
+        fisrt.getFile(myfile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot)
+            {
+                Bitmap bitmap= BitmapFactory.decodeFile(finalmyfile1.getAbsolutePath());
+                imageView1.setImageBitmap(bitmap);
+
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e)
+            {
+                Toast.makeText(Adverstisement.this, "Fetching .....", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+        StorageReference second=reference.child("vehiclead2.jpg");
+        File myfile2=null;
+        try
+        {
+            myfile2=File.createTempFile("images",".jpg");
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        final File finalfilefile2=myfile2;
+        second.getFile(myfile2).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot)
+            {
+                Bitmap bitmap= BitmapFactory.decodeFile(finalfilefile2.getAbsolutePath());
+                imageView2.setImageBitmap(bitmap);
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e)
+            {
+                Toast.makeText(Adverstisement.this, "Fetching ....", Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
     }
 
