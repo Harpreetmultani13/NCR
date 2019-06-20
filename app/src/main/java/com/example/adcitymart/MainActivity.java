@@ -149,3 +149,4 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.transion,R.anim.out);
     }*/
 }
+//dONE
