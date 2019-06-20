@@ -103,7 +103,6 @@ public class Home extends AppCompatActivity
     public void onBackPressed()
     {
         final AlertDialog.Builder alert=new AlertDialog.Builder(this);
-        alert.setMessage("CONFIRM EXIT");
         alert.setTitle("ARE YOU SURE TO EXIT");
         alert.setIcon(R.drawable.close);
         alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -171,7 +170,6 @@ public class Home extends AppCompatActivity
         auth=FirebaseAuth.getInstance();
             firebaseUser =auth.getCurrentUser();
         AlertDialog.Builder builder=new AlertDialog.Builder(this);
-        builder.setMessage("CONFIRM EXIT");
         builder.setTitle("ARE YOU SURE TO Log Out");
         builder.setIcon(R.drawable.close);
             builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {

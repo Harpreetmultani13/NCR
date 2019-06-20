@@ -29,12 +29,15 @@ public class Not_Verified extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_not__verified);
+        Auth = FirebaseAuth.getInstance();
+        firebaseUser = Auth.getCurrentUser();
+        //email = firebaseUser.getEmail();
         button=findViewById(R.id.resend);
         textView=findViewById(R.id.verfied);
         image=findViewById(R.id.image_verified);
-        Auth = FirebaseAuth.getInstance();
-        firebaseUser = Auth.getCurrentUser();
-        email = firebaseUser.getEmail();
+
+
+
             if(!firebaseUser.isEmailVerified())
             {
                 image.setImageResource(R.drawable.not_verified);
@@ -42,7 +45,7 @@ public class Not_Verified extends AppCompatActivity {
             }
             else
             {
-                textView.setText("Welcome " + email);
+                textView.setText("Welcome " );
                 button.setVisibility(View.INVISIBLE);
                 new Handler().postDelayed(new Runnable() {
                     @Override
@@ -67,7 +70,7 @@ public class Not_Verified extends AppCompatActivity {
             {
                 if(task.isSuccessful())
                 {
-                    Toast.makeText(Not_Verified.this, "Verification Email Sent To "+email, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Not_Verified.this, "Verification Email Sent To ", Toast.LENGTH_SHORT).show();
                 }
                 else
                 {

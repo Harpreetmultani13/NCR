@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_main);
-
+//overridePendingTransition(R.anim.transion,R.anim.out);
         FirebaseApp.initializeApp(this);
         Auth = FirebaseAuth.getInstance();
 
@@ -96,12 +96,7 @@ public class MainActivity extends AppCompatActivity {
                             sharedPreferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
                             sharedPreferences.edit().putBoolean("Islogin", islogin).commit();
                         }
-                      /*  else
-                        {
-                            Intent intent = new Intent(MainActivity.this,Not_Verified.class);
-                            startActivity(intent);
 
-                        }*/
 
                     }
                     else {
@@ -146,4 +141,11 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
+
+   /* @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.transion,R.anim.out);
+    }*/
 }

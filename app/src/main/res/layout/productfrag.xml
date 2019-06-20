@@ -135,7 +135,12 @@
 </LinearLayout>
 
 
-
+<TextView
+    android:layout_width="wrap_content"
+    android:textSize="28dp"
+    android:textColor="#FFFFFF"
+    android:text="ADCITYMARY"
+    android:layout_height="wrap_content" />
 </LinearLayout>
 
     </ScrollView>
