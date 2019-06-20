@@ -74,4 +74,4 @@ thread.start();
         super.onBackPressed();
         overridePendingTransition(R.anim.transion,R.anim.out);
     }*/
-}//done
+}//done okk
