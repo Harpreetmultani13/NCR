@@ -57,14 +57,338 @@
                 android:layout_gravity="center"
                 android:background="@color/colorPrimary">
             </View>
-            <TextView
-                android:text="Required Internet for Data"
+
+
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+
+                <TextView
+
+                    android:textColor=" #009933"
+                    android:text="Static"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="20dp"
+                    android:typeface="serif"
+                    android:textSize="20dp"/>
+                    <View android:layout_height="1dp"
+                        android:layout_width="320dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimary">
+                    </View>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:textSize="12dp"
+                        android:typeface="serif"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/shape1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="Responsive Design"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <Button
+                        android:textSize="12dp"
+                        android:typeface="serif"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/shape1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="Responsive Design"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:textSize="12dp"
+                        android:typeface="serif"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/shape1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="@string/html_5_css_5"
+                        android:layout_height="wrap_content" />
+
+
+                    <Button
+                        android:textSize="12dp"
+                        android:typeface="serif"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="44dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/shape1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="Styled element"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+<TextView
+
+    android:typeface="serif"
+    android:layout_marginTop="22dp"
+    android:padding="10dp"
+    android:textColor="#fff"
+    android:background="@drawable/shape1"
+    android:layout_width="wrap_content"
+    android:textSize="14dp"
+    android:layout_gravity="center"
+    android:text="Starting Rs. 4999"
+    android:layout_height="wrap_content" />
+                    <View android:layout_height="1dp"
+                        android:layout_width="320dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimary">
+                    </View>
+
+
+                </LinearLayout>
+            <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:layout_margin="20dp"
-                android:id="@+id/id_web"
-                android:typeface="serif"
-                android:textSize="14dp"/>
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:textColor="#996633"
+                    android:text="Dynamic"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="20dp"
+                    android:typeface="serif"
+                    android:textSize="20dp"/>
+                <View android:layout_height="1dp"
+                    android:layout_width="320dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary">
+                </View>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:textSize="12dp"
+                        android:typeface="serif"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/shape1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="Responsive Design"
+                        android:layout_height="wrap_content" />
+
+
+                    <Button
+                        android:textSize="12dp"
+                        android:typeface="serif"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/shape1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="Color Customization"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:textSize="12dp"
+                        android:typeface="serif"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/shape1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="@string/html_5_css_5"
+                        android:layout_height="wrap_content" />
+
+
+                    <Button
+                        android:textSize="12dp"
+                        android:typeface="serif"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="44dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/shape1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="Styled element"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:typeface="serif"
+                    android:layout_marginTop="22dp"
+                    android:padding="10dp"
+                    android:textColor="#fff"
+                    android:background="@drawable/shape1"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="Starting Rs. 8999"
+                    android:layout_height="wrap_content" />
+                <View
+                   android:layout_marginTop="6dp"
+                    android:layout_height="1dp"
+                    android:layout_width="320dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary">
+                </View>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:typeface="serif"
+                    android:textColor="#ff0000"
+                    android:text="Professional"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="20dp"
+
+                    android:textSize="20dp"/>
+                <View android:layout_height="1dp"
+                    android:layout_width="320dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary">
+                </View>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:textSize="12dp"
+                        android:typeface="serif"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/shape1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="Core PHP- Rs. 9999"
+                        android:layout_height="wrap_content" />
+
+
+                    <Button
+                        android:textSize="12dp"
+                        android:typeface="serif"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/shape1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="Wordpress- Rs. 5999"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:textSize="12dp"
+                        android:typeface="serif"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/shape1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="Javascript/JQuery- Rs. 5999"
+                        android:layout_height="wrap_content" />
+
+
+                    <Button
+                        android:textSize="12dp"
+                        android:typeface="serif"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="44dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/shape1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="HTML+CSS - Rs. 2999"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:typeface="serif"
+                    android:layout_marginTop="22dp"
+                    android:padding="10dp"
+                    android:textColor="#fff"
+                    android:background="@drawable/shape1"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="Starting Rs. 2999"
+                    android:layout_height="wrap_content" />
+                <View
+
+                    android:layout_marginTop="6dp"
+                    android:layout_height="1dp"
+                    android:layout_width="320dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary">
+                </View>
+
+
+            </LinearLayout>
+
+
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView

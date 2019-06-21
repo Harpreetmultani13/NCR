@@ -36,7 +36,7 @@ public class Development extends AppCompatActivity
         Fetch_ERP();
         Fetch_JAVA();
         textView_andoid=findViewById(R.id.id_andoid);
-        textView_web=findViewById(R.id.id_web);
+       // textView_web=findViewById(R.id.id_web);
         textView_cms=findViewById(R.id.id_cms);
         textView_erp=findViewById(R.id.id_erp);
         textView_ecomm=findViewById(R.id.id_ecommerce);

@@ -13,7 +13,7 @@
         <activity android:name=".Blog"></activity>
         <activity android:name=".Follow_Us" android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".Intership" />
-        <activity android:name=".Careers" />
+        <activity android:name=".Careers" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".Marketing" />
         <activity android:name=".Development" />
         <activity android:name=".Adverstisement" />

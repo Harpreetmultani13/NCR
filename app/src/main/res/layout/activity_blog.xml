@@ -34,19 +34,21 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/iconemail"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
+                    android:typeface="serif"
+                    android:textSize="27dp"
                     android:layout_marginStart="12dp"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"
                     android:text="E-mail advertising"
-                    android:textSize="25dp"
+
                     android:textStyle="bold"
                     android:textColor="@color/colorPrimary"/>
 
@@ -64,7 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
                 android:id="@+id/id_emailadvertisement"
-                android:textSize="15dp"/>
+                android:textSize="14dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -87,7 +89,7 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/iconecommerce"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 
@@ -119,7 +121,7 @@
                 android:layout_margin="20dp"
                 android:id="@+id/id_vs"
                 android:typeface="serif"
-                android:textSize="18dp"/>
+                android:textSize="14dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -142,7 +144,7 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/icondigitalmarket"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 
@@ -194,7 +196,7 @@
                 android:layout_margin="20dp"
                 android:id="@+id/id_mobile_adver"
                 android:typeface="serif"
-                android:textSize="18dp"/>
+                android:textSize="14dp"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>>
 
@@ -226,7 +228,7 @@
                         android:layout_margin="20dp"
                         android:id="@+id/id_desktop"
                         android:typeface="serif"
-                        android:textSize="18dp"/>
+                        android:textSize="14dp"/>
 
                 </LinearLayout>
 
@@ -259,7 +261,7 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/iconstart"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 
@@ -291,7 +293,7 @@
                 android:layout_margin="20dp"
                 android:id="@+id/id_startup"
                 android:typeface="serif"
-                android:textSize="18dp"/>
+                android:textSize="14dp"/>
             <android.support.v7.widget.CardView
             android:layout_height="match_parent"
             android:layout_width="match_parent"
@@ -320,7 +322,7 @@
                     android:layout_margin="20dp"
                     android:id="@+id/id_breakdown"
                     android:typeface="serif"
-                    android:textSize="18dp"/>
+                    android:textSize="14dp"/>
 
             </LinearLayout>
 
@@ -352,7 +354,7 @@
                         android:layout_margin="20dp"
                         android:id="@+id/id_consideration"
                         android:typeface="serif"
-                        android:textSize="18dp"/>
+                        android:textSize="14dp"/>
 
                 </LinearLayout>
 
@@ -386,7 +388,7 @@
                         android:layout_margin="20dp"
                         android:id="@+id/id_funding"
                         android:typeface="serif"
-                        android:textSize="18dp"/>
+                        android:textSize="14dp"/>
 
                 </LinearLayout>
 
@@ -417,7 +419,7 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/iconsacle"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 
@@ -448,7 +450,7 @@
                 android:layout_margin="20dp"
                 android:id="@+id/id_scaleUp"
                 android:typeface="serif"
-                android:textSize="18dp"/>
+                android:textSize="14dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
 

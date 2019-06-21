@@ -102,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
                     else {
                         progressDialog.dismiss();
                         Toast.makeText(MainActivity.this, "Bad Credentials", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Or No Internet", Toast.LENGTH_SHORT).show();
                     }
 
                 }

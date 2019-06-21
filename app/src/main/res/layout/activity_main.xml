@@ -90,11 +90,12 @@
     </LinearLayout>
 
 <Button
+
     android:onClick="SignInMethod"
     android:layout_width="260dp"
     android:layout_height="50dp"
     android:text="Sign In"
-    android:background="#fff"
+    android:background="@drawable/shape"
     android:textStyle="bold"
     android:id="@+id/ButtonsignIn"
     android:textColor="@color/colorPrimary"

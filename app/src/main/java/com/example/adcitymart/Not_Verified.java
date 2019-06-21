@@ -45,7 +45,7 @@ public class Not_Verified extends AppCompatActivity {
             }
             else
             {
-                textView.setText("Welcome " );
+                textView.setText(" Welcome " );
                 button.setVisibility(View.INVISIBLE);
                 new Handler().postDelayed(new Runnable() {
                     @Override

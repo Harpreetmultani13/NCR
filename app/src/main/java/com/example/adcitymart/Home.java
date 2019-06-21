@@ -63,7 +63,7 @@ public class Home extends AppCompatActivity
                 if(id==R.id.idhome)
                 {
                     fragment=new Home_Frag();
-                    Toast.makeText(Home.this, "This is Home", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Home.this, "Home", Toast.LENGTH_SHORT).show();
                 }
                 else if(id==R.id.aboutus)
                 {
@@ -72,7 +72,7 @@ public class Home extends AppCompatActivity
                 else if(id==R.id.idsevices)
                 {
                     fragment=new Products();
-                    Toast.makeText(Home.this, "This is services", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Home.this, "Services", Toast.LENGTH_SHORT).show();
                 }
                 else if(id==R.id.logout)
                 {
@@ -170,7 +170,7 @@ public class Home extends AppCompatActivity
         auth=FirebaseAuth.getInstance();
             firebaseUser =auth.getCurrentUser();
         AlertDialog.Builder builder=new AlertDialog.Builder(this);
-        builder.setTitle("ARE YOU SURE TO Log Out");
+        builder.setTitle("ARE YOU SURE TO LOG OUT");
         builder.setIcon(R.drawable.questionmark);
             builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 @Override
