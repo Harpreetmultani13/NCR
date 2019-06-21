@@ -31,7 +31,7 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/icondisplayads"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 
@@ -60,7 +60,7 @@
             <TextView
                 android:text="Required Internet for Data"
                 android:typeface="serif"
-                android:textSize="15dp"
+                android:textSize="14dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
@@ -87,7 +87,8 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/iconsocialmediaads"
+
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 
@@ -118,7 +119,7 @@
                 android:id="@+id/social"
                 android:text="Required Internet for Data"
                 android:typeface="serif"
-                android:textSize="16dp"/>
+                android:textSize="14dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -141,7 +142,7 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/iconnewspaperads"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 
@@ -172,7 +173,7 @@
                 android:layout_margin="20dp"
                 android:id="@+id/news"
                 android:typeface="serif"
-                android:textSize="16dp"/>
+                android:textSize="14dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -195,7 +196,7 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/iconoutdoor"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 
@@ -226,7 +227,7 @@
                 android:layout_margin="20dp"
                 android:id="@+id/outdoor"
                 android:typeface="serif"
-                android:textSize="16dp"/>
+                android:textSize="14dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -249,7 +250,7 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/iconpp"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 
@@ -280,7 +281,7 @@
                 android:layout_margin="20dp"
                 android:id="@+id/id_PP"
                 android:typeface="serif"
-                android:textSize="16dp"/>
+                android:textSize="14dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -303,7 +304,7 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/icontelevision"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 
@@ -334,7 +335,7 @@
                 android:layout_margin="20dp"
                 android:id="@+id/radio"
                 android:typeface="serif"
-                android:textSize="16dp"/>
+                android:textSize="14dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -357,7 +358,7 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/iconemail"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 
@@ -388,7 +389,7 @@
                 android:layout_margin="20dp"
                 android:id="@+id/id_email"
                 android:typeface="serif"
-                android:textSize="16dp"/>
+                android:textSize="14dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -411,7 +412,7 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/iconvideo"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 
@@ -442,7 +443,7 @@
                 android:layout_margin="20dp"
                 android:id="@+id/id_video"
                 android:typeface="serif"
-                android:textSize="16dp"/>
+                android:textSize="14dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -465,7 +466,7 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/iconvehicle"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 

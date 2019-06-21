@@ -192,7 +192,7 @@
         android:layout_gravity="center"
         android:textSize="20sp"
         android:textColor="#000"
-        android:text="Our Cleints"
+        android:text="Our Clients and Channel Patners"
         android:textStyle="bold"/>
     <LinearLayout
         android:layout_marginTop="15dp"
@@ -216,7 +216,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_gravity="center"
-                    android:src="@drawable/blog"
+                    android:src="@drawable/contacthome"
                     android:scaleType="fitXY"
                     android:layout_width="match_parent"
                     android:layout_height="80dp" />
@@ -226,7 +226,7 @@
                     android:layout_height="40dp">
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Carreer"
+                        android:text="Contact Us"
                         android:textStyle="bold"
                         android:textColor="#000"
                         android:layout_gravity="center"
@@ -336,7 +336,7 @@
                     android:layout_height="40dp">
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Carreer"
+                        android:text="Follow us"
                         android:textStyle="bold"
                         android:textColor="#000"
                         android:layout_gravity="center"

@@ -104,7 +104,7 @@ public class Home extends AppCompatActivity
     {
         final AlertDialog.Builder alert=new AlertDialog.Builder(this);
         alert.setTitle("ARE YOU SURE TO EXIT");
-        alert.setIcon(R.drawable.close);
+        alert.setIcon(R.drawable.questionmark);
         alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which)
@@ -171,7 +171,7 @@ public class Home extends AppCompatActivity
             firebaseUser =auth.getCurrentUser();
         AlertDialog.Builder builder=new AlertDialog.Builder(this);
         builder.setTitle("ARE YOU SURE TO Log Out");
-        builder.setIcon(R.drawable.close);
+        builder.setIcon(R.drawable.questionmark);
             builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
