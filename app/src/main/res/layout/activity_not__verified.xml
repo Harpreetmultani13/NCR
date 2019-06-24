@@ -10,13 +10,13 @@
 
 
     <ImageView
-        android:layout_width="180dp"
+        android:layout_width="150dp"
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
         android:scaleType="centerCrop"
         android:src="@drawable/admartlogo"
         android:id="@+id/image_verified"
-        android:layout_height="180dp" />
+        android:layout_height="150dp" />
     <TextView
         android:layout_width="wrap_content"
         android:id="@+id/verfie"
