@@ -273,7 +273,7 @@ StorageReference reference;
 
             }
         });
-        StorageReference nine=reference.child("axisbank.png");
+        StorageReference nine=reference.child("sbi.png");
         File myfile9=null;
         try {
             myfile9=File.createTempFile("images",".jpg");

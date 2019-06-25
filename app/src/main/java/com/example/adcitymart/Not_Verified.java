@@ -1,6 +1,7 @@
 package com.example.adcitymart;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -32,6 +33,7 @@ public class Not_Verified extends AppCompatActivity {
         Auth = FirebaseAuth.getInstance();
         firebaseUser = Auth.getCurrentUser();
         //email = firebaseUser.getEmail();
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         button=findViewById(R.id.resend);
         textView=findViewById(R.id.verfied);
         image=findViewById(R.id.image_verified);

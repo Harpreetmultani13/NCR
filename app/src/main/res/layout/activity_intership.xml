@@ -99,8 +99,7 @@
                 android:id="@+id/one"
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent"
-                android:scaleType="fitXY"
-                android:src="@drawable/intern3"/>
+                android:scaleType="fitXY" />
 
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
@@ -116,8 +115,7 @@
                 android:layout_marginTop="22dp"
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent"
-                android:scaleType="fitXY"
-                android:src="@drawable/intern2"/>
+                android:scaleType="fitXY" />
 
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
@@ -133,8 +131,7 @@
                 android:layout_marginTop="22dp"
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent"
-                android:scaleType="fitXY"
-                android:src="@drawable/intern1"/>
+                android:scaleType="fitXY" />
 
         </android.support.v7.widget.CardView>
 

@@ -3,6 +3,7 @@ package com.example.adcitymart;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
@@ -43,10 +44,9 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_main);
-//overridePendingTransition(R.anim.transion,R.anim.out);
         FirebaseApp.initializeApp(this);
         Auth = FirebaseAuth.getInstance();
-
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         progressDialog = new ProgressDialog(this);
         name = findViewById(R.id.idusername);
         password = findViewById(R.id.password);
@@ -102,7 +102,6 @@ public class MainActivity extends AppCompatActivity {
                     else {
                         progressDialog.dismiss();
                         Toast.makeText(MainActivity.this, "Bad Credentials", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(MainActivity.this, "Or No Internet", Toast.LENGTH_SHORT).show();
                     }
 
                 }

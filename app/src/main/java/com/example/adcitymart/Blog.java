@@ -1,5 +1,6 @@
 package com.example.adcitymart;
 
+import android.content.pm.ActivityInfo;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,6 +34,7 @@ TextView textView_scaleup,textView_ecom,textView_mail,textView_mobile,textView_s
         super.onCreate(savedInstanceState);
       //  getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_blog);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         textView_scaleup=findViewById(R.id.id_scaleUp);
         textView_ecom=findViewById(R.id.id_vs);
         textView_mail=findViewById(R.id.id_emailadvertisement);

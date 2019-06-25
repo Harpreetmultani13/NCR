@@ -1,5 +1,6 @@
 package com.example.adcitymart;
 
+import android.content.pm.ActivityInfo;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -38,6 +39,7 @@ public class Marketing extends AppCompatActivity
         textView_emails=findViewById(R.id.id_mail_market);
         textView_smo=findViewById(R.id.id_smoo);
         textView_m1=findViewById(R.id.id_Month1);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         textView_m2=findViewById(R.id.id_Month2);
         textView_m3=findViewById(R.id.id_Month3);
         textView_m4=findViewById(R.id.id_Month4);

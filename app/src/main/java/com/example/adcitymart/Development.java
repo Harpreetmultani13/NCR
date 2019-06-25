@@ -1,5 +1,6 @@
 package com.example.adcitymart;
 
+import android.content.pm.ActivityInfo;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -41,6 +42,7 @@ public class Development extends AppCompatActivity
         textView_erp=findViewById(R.id.id_erp);
         textView_ecomm=findViewById(R.id.id_ecommerce);
         textView_java=findViewById(R.id.id_java);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
 
     }

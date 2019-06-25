@@ -1,5 +1,6 @@
 package com.example.adcitymart;
 
+import android.content.pm.ActivityInfo;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,6 +28,7 @@ public class Design extends AppCompatActivity
         super.onCreate(savedInstanceState);
        // getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_design);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         textView_3d=findViewById(R.id.id_DDD);
         textView_graphics=findViewById(R.id.id_graphics);
         textView_logo=findViewById(R.id.id_logo);

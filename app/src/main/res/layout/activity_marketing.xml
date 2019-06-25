@@ -286,7 +286,7 @@
                     android:layout_height="40dp"
                     android:layout_width="40dp"
                     android:layout_marginStart="12dp"
-                    android:src="@drawable/about_us"
+                    android:src="@drawable/iconpp"
                     android:layout_marginLeft="12dp"
                     android:layout_gravity="center"/>
 

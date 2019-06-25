@@ -1,5 +1,6 @@
 package com.example.adcitymart;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.annotation.NonNull;
@@ -48,6 +49,7 @@ public class Adverstisement extends AppCompatActivity
         super.onCreate(savedInstanceState);
        // getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_adverstisement);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         imageView1=findViewById(R.id.one);
         imageView2=findViewById(R.id.two);
         textView_display=findViewById(R.id.id_display);

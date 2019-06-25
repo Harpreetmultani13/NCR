@@ -1,5 +1,6 @@
 package com.example.adcitymart;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.annotation.NonNull;
@@ -46,6 +47,7 @@ public class Intership extends AppCompatActivity
         Imageinit();
 
         fetchdata();
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         textView=findViewById(R.id.internshipid);
         imageView1=findViewById(R.id.one);

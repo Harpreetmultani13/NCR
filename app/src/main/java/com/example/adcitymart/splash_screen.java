@@ -1,7 +1,9 @@
 package com.example.adcitymart;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Handler;
 import android.preference.PreferenceManager;
@@ -28,13 +30,14 @@ public class splash_screen extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         preferences = PreferenceManager.getDefaultSharedPreferences(splash_screen.this);
-        isLogin = preferences.getBoolean("Islogin",true);
+        isLogin = preferences.getBoolean("Islogin",false);
         imageView=findViewById(R.id.splash);
         textView=findViewById(R.id.splashtext);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash_screen);
-        overridePendingTransition(R.anim.transion, R.anim.out);
+       // overridePendingTransition(R.anim.transion, R.anim.out);
         Toast.makeText(this, ""+isLogin, Toast.LENGTH_SHORT).show();
         final Thread thread = new Thread() {
             @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
@@ -51,7 +54,7 @@ public class splash_screen extends AppCompatActivity
                     }
                     else if(isLogin)
                     {
-                        Intent intent = new Intent(getApplicationContext(), Home.class);
+                        Intent intent = new Intent(getApplicationContext(), Not_Verified.class);
                         startActivity(intent);
                         finish();
                     }

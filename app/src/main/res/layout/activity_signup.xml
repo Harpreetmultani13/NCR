@@ -76,8 +76,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:id="@+id/layoutPassword"
-        app:passwordToggleEnabled="true"
         android:textColorHint="#FFFFFF"
+        app:passwordToggleEnabled="true"
         android:layout_height="wrap_content">
 
         <EditText
@@ -90,7 +90,7 @@
             android:id="@+id/password"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimary"
-            android:textColor="#ffffff"
+            android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"/>
     </android.support.design.widget.TextInputLayout>
 
