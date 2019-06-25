@@ -65,6 +65,22 @@
                 android:layout_width="match_parent"
                 android:layout_margin="20dp"
                 android:id="@+id/id_display" />
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/iddisads1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="19dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/iddisads2"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -120,6 +136,23 @@
                 android:text="Required Internet for Data"
                 android:typeface="serif"
                 android:textSize="14dp"/>
+
+
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/idsocalads1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/idsocialads2"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -174,6 +207,20 @@
                 android:id="@+id/news"
                 android:typeface="serif"
                 android:textSize="14dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/idnews1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/idnews2"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -228,6 +275,21 @@
                 android:id="@+id/outdoor"
                 android:typeface="serif"
                 android:textSize="14dp"/>
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/idoutdoor1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/idoutdoor2"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -284,6 +346,73 @@
                 android:textSize="14dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        app:cardElevation="8dp">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/icondisplayads"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:typeface="serif"
+                    android:textSize="27dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="center"
+                    android:text="Event Marketing"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+            <View android:layout_height="1dp"
+                android:layout_width="320dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary">
+            </View>
+
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/idevent1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/idevent2"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
     <android.support.v7.widget.CardView
         android:layout_height="match_parent"
         android:layout_width="match_parent"
@@ -330,9 +459,20 @@
                         </View>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:typeface="serif"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:text="Radio Ads"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
 
 
 
@@ -345,6 +485,37 @@
                             android:typeface="serif"
                             android:textSize="14dp"/>
             </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:typeface="serif"
+               android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:text="Television Ads"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Required Internet for Data"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:id="@+id/idtelevison"
+                android:typeface="serif"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+
+
+
+
                     </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -399,6 +570,21 @@
                 android:id="@+id/id_email"
                 android:typeface="serif"
                 android:textSize="14dp"/>
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/idemailimage1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/idemailiamge2"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -453,6 +639,24 @@
                 android:id="@+id/id_video"
                 android:typeface="serif"
                 android:textSize="14dp"/>
+
+
+
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/idvideo1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/idvideo2"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
