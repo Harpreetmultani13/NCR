@@ -118,7 +118,7 @@ public class Adverstisement extends AppCompatActivity
 
         storage= FirebaseStorage.getInstance();
         reference=storage.getReferenceFromUrl("gs://adcitymart-9095a.appspot.com");
-        StorageReference fisrt=reference.child("vehiclead1.jpg");
+        StorageReference fisrt=reference.child("vehiclead2.jpg");
         File myfile=null;
         try
         {
@@ -146,7 +146,7 @@ public class Adverstisement extends AppCompatActivity
         });
 
 
-        StorageReference second=reference.child("vehiclead2.jpg");
+        StorageReference second=reference.child("vehiclead1.jpg");
         File myfile2=null;
         try
         {

@@ -16,7 +16,7 @@
         <activity android:name=".Careers" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".Marketing" />
         <activity android:name=".Development" />
-        <activity android:name=".Adverstisement" />
+        <activity android:name=".Adverstisement"></activity>
         <activity android:name=".Design" />
         <activity android:name=".Not_Verified" android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".splash_screen" android:theme="@style/Theme.AppCompat.NoActionBar">
