@@ -46,7 +46,6 @@ public class Signup extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_signup);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-       //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         initialize();
     }
 
@@ -67,6 +66,7 @@ public class Signup extends AppCompatActivity {
             return super.onOptionsItemSelected(item);
         }
     }*/
+
 
     //Method to signup user
     public void mysignup(View view)
@@ -146,7 +146,7 @@ public class Signup extends AppCompatActivity {
     }
     public void initialize()
     {
-        //ASDFGHJKL
+
         textView=findViewById(R.id.sign_in);
         user = findViewById(R.id.email);
         pasword = findViewById(R.id.password);

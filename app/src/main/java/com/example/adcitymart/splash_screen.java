@@ -17,8 +17,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static java.lang.Thread.currentThread;
-import static java.lang.Thread.sleep;
 
 public class splash_screen extends AppCompatActivity
 {
@@ -37,7 +35,7 @@ public class splash_screen extends AppCompatActivity
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash_screen);
-       // overridePendingTransition(R.anim.transion, R.anim.out);
+
         Toast.makeText(this, ""+isLogin, Toast.LENGTH_SHORT).show();
         final Thread thread = new Thread() {
             @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
@@ -48,8 +46,6 @@ public class splash_screen extends AppCompatActivity
                     if(!isLogin) {
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent);
-                        //ActivityOptionsCompat optionsCompat=ActivityOptionsCompat.makeSceneTransitionAnimation(splash_screen.this,findViewById(R.id.splash),"splashshared");
-                        //startActivity(intent,optionsCompat.toBundle());
                         finish();
                     }
                     else if(isLogin)
@@ -72,9 +68,5 @@ thread.start();
 
     }
 
-   /* @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        overridePendingTransition(R.anim.transion,R.anim.out);
-    }*/
-}//done okk
+
+}

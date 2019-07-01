@@ -31,15 +31,11 @@ public class Home extends AppCompatActivity
 {
     Fragment fragment;
     BottomNavigationView bottomNavigationView;
-    ActionBarDrawerToggle actionBarDrawerToggle;
     SharedPreferences preferences;
-    NavigationView navigationView;
-    DrawerLayout drawerLayout;
     FirebaseAuth auth;
     FirebaseUser firebaseUser;
     FrameLayout frameLayout;
-    TextView textView;
-    String email;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -70,6 +66,7 @@ public class Home extends AppCompatActivity
                 else if(id==R.id.aboutus)
                 {
                     fragment=new About_us();
+                    Toast.makeText(Home.this, "About_us", Toast.LENGTH_SHORT).show();
                 }
                 else if(id==R.id.idsevices)
                 {
@@ -91,15 +88,11 @@ public class Home extends AppCompatActivity
             }
         });
 
-      //  getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
 
 
-
-
-
-//ALERT DILAOG BOX
+//ALERT DILAOG BOX For Exit
 
     @Override
     public void onBackPressed()
@@ -124,37 +117,6 @@ public class Home extends AppCompatActivity
             alert.show();
 
     }
-
-
-
-  /*  private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener = new OnNavigationItemSelectedListener() {
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item)
-        {
-            fragment=null;
-
-            switch (item.getItemId())
-            {
-                case R.id.idhome:
-                    Toast.makeText(Home.this, "This is home", Toast.LENGTH_SHORT).show();
-
-                    break;
-                case R.id.idsevices:
-                    Toast.makeText(Home.this, "This  is sevices", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.aboutus:
-                    Toast.makeText(Home.this, "About us", Toast.LENGTH_SHORT).show();
-                    fragment=new About_us();
-                    break;
-                case R.id.logout:
-                    logOutMethod();
-                    break;
-
-            }
-            return true;
-        }
-    };*/
-
 
 
    

@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     TextInputLayout inputname, inputpassword;
     TextView forgetText, Signuptext;
     ProgressDialog progressDialog;
-    FirebaseUser firebaseUser;
     FirebaseAuth Auth;
     Boolean islogin=false ;
     SharedPreferences sharedPreferences;
@@ -87,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                         boolean s = Auth.getCurrentUser().isEmailVerified();
                         if(s)
                         {
-                            Toast.makeText(MainActivity.this, "Success", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, " Welcome ", Toast.LENGTH_SHORT).show();
                             progressDialog.dismiss();
                             Intent intent = new Intent(MainActivity.this, Not_Verified.class);
                             startActivity(intent);
@@ -121,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    // FORGET PASSWORD DI CODING
     public void forgetpasssordmethod(View view) {
         if (name.getText().toString().equals("")) {
             Toast.makeText(this, "Plz enter username", Toast.LENGTH_SHORT).show();
@@ -143,10 +143,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-   /* @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        overridePendingTransition(R.anim.transion,R.anim.out);
-    }*/
+
+
 }
-//dONE
