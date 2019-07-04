@@ -45,7 +45,21 @@ public class Products extends Fragment
                 Market(v);
             }
         });
+        view.findViewById(R.id.cardconsultancy).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Consultncy(v);
+
+            }
+        });
         return view;
+    }
+
+    private void Consultncy(View v)
+    {
+        Intent intent=new Intent(getActivity(),consultancy.class);
+        startActivity(intent);
     }
 
     private void Market(View v)

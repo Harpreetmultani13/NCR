@@ -271,7 +271,7 @@
 
                 android:layout_margin="20dp"
                 android:typeface="serif"
-                android:text="This Application is developed by Er.Geetansh (9813807461)"
+                android:text="This Application is developed by Er. Geetansh (9813807461)"
                 android:textSize="16dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
